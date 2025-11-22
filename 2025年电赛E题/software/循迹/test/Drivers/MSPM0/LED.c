@@ -1,0 +1,34 @@
+#include "LED.h"
+
+void LED1_ON()
+{
+	DL_GPIO_clearPins(LED1_PORT, LED1_LED1PIN_PIN);
+}
+
+void LED1_OFF()
+{
+	DL_GPIO_setPins(LED1_PORT, LED1_LED1PIN_PIN);
+}
+
+void LED2_ON()
+{
+	DL_GPIO_clearPins(LED2_PORT, LED2_LED2PIN_PIN);
+}
+
+void LED2_OFF()
+{
+	DL_GPIO_setPins(LED2_PORT, LED2_LED2PIN_PIN);
+}
+
+void BUZZER_ON()
+{
+	DL_GPIO_setPins(BUZZER_PORT, BUZZER_BUZZERPIN_PIN);
+}
+
+void BUZZER_OFF()
+{
+	
+	DL_GPIO_clearPins(BUZZER_PORT, BUZZER_BUZZERPIN_PIN);
+}
+
+
